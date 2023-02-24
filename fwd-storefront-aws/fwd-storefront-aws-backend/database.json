@@ -1,0 +1,16 @@
+{
+    "dev": {
+      "driver": "pg",
+      "host": "database-2.csjxfdqawy39.us-east-1.rds.amazonaws.com",
+      "database": "store",
+      "user": "full_stack_user",
+      "password": "password123"
+    },
+    "test": {
+      "driver": "pg",
+      "host": "database-2.csjxfdqawy39.us-east-1.rds.amazonaws.com",
+      "database": "store_test",
+      "user": "full_stack_user",
+      "password": "password123"
+    }
+  }
