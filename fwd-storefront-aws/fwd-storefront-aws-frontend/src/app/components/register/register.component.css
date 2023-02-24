@@ -1,0 +1,13 @@
+.container{
+    width: 30%;
+    margin-top: 5%;
+}
+
+h2{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}

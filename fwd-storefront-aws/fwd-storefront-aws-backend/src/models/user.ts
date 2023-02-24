@@ -90,6 +90,11 @@ export class UserStore{
             if (password == user.password) {
               return user
             }
+            else{
+              throw new Error(`Wrong username or password`)
+            }
+          }else{
+            throw new Error(`Wrong username or password`)
           }
         } catch (err) {
           throw new Error(`Could not authonticate. Error: ${err}`)
