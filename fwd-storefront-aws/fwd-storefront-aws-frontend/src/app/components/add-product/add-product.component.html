@@ -4,13 +4,13 @@
 
         <div class="form-group">
           <label for="name">Product Name</label>
-          <input type="text" class="form-control" id="name"  placeholder="Product First Name">
+          <input name="name" [(ngModel)]="name"  type="text" class="form-control" id="name"  placeholder="Product First Name">
         </div>
 
         <div class="form-group">
             <label for="price">Price</label>
-            <input type="number" class="form-control" id="price"  placeholder="Enter Price">
+            <input name="price" [(ngModel)]="price" type="number" class="form-control" id="price"  placeholder="Enter Price">
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button (click)="addProduct()" type="submit" class="btn btn-primary">Submit</button>
       </form>
 </div>
