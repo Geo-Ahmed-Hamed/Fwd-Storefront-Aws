@@ -45,19 +45,6 @@ jobs:
       - aws-cli/setup
       - checkout
       - run:
-          name: Add Environment Variables
-          command: |
-            eb setenv BCRYPT_PASSWORD=store-password 
-            eb setenv ENV=dev 
-            eb setenv PORT=3000 
-            eb setenv POSTGRES_DB=store 
-            eb setenv POSTGRES_HOST=database-2.csjxfdqawy39.us-east-1.rds.amazonaws.com 
-            eb setenv POSTGRES_PASSWORD=password123
-            eb setenv POSTGRES_TEST_DB=store_test
-            eb setenv POSTGRES_USER=full_stack_user
-            eb setenv SALT_ROUNDS=10
-            eb setenv TOKEN_SECRET=dsfds!5434
-      - run:
           name: Deploy App
           command: |
             npm run deploy
