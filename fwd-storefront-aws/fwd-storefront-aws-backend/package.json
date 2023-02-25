@@ -5,7 +5,7 @@
   "main": "server.ts",
   "scripts": {
     "deploy": "eb list && eb use fwd-storefront-aws-backend && eb deploy",
-    "build": "npx tsc && cp -rf src/config www/config && cp -R .elasticbeanstalk www/.elasticbeanstalk && cp .npmrc www/.npmrc && cp package.json www/package.json",
+    "build": "npx tsc && cp -R .elasticbeanstalk www/.elasticbeanstalk && cp .npmrc www/.npmrc && cp package.json www/package.json",
     "start": "node ./www/server.js",
     "tsc": "npx tsc",
     "prod": "npx tsc && node ./www/server.js",
