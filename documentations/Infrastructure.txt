@@ -1,0 +1,7 @@
+## Infrastructure
+
+- AWS RDS for the database
+- AWS ElasticBeanstalk for the API
+- AWS s3 for web hosting
+- Circleci for pipeline and deploy
+- Github as a reposatory for source code

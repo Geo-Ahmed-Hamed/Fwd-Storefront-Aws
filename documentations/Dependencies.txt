@@ -1,0 +1,6 @@
+## Dependencies
+
+- npm: "9.5.0",
+- node: "16.19.0"
+- AWS CLI
+- ElasticBeanstalk CLI

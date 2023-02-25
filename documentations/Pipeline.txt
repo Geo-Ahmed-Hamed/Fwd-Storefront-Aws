@@ -1,0 +1,11 @@
+## Pipeline
+
+1- Pushing the code to Github 
+2- Trigger a build in Circleci
+3- Install Front-End Dependencies
+4- Install API Dependencies
+5- Build Front-End
+6- Build API 
+7- Manual approve to start deployment
+8- Deploy API To AWS ElasticBeanstalk
+9- Deploy Front-End to AWS S3
