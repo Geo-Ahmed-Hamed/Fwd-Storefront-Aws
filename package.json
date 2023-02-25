@@ -1,7 +1,9 @@
 {
     "scripts": {
+        "frontend:install": "cd fwd-storefront-aws/fwd-storefront-aws-frontend && npm install -f",
         "frontend:build": "cd fwd-storefront-aws/fwd-storefront-aws-frontend && npm run build",
         "frontend:deploy": "cd fwd-storefront-aws/fwd-storefront-aws-frontend && npm run deploy",
+        "backend:install": "cd fwd-storefront-aws/fwd-storefront-aws-backend && npm install -f",
         "backend:build": "cd fwd-storefront-aws/fwd-storefront-aws-backend && npm run build",
         "backend:deploy": "cd fwd-storefront-aws/fwd-storefront-aws-backend && npm run deploy",
         "deploy": "npm run api:deploy && npm run frontend:deploy"
