@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.ts",
   "scripts": {
-    "setenv": "eb setenv BCRYPT_PASSWORD=store-password && eb setenv ENV=dev && eb setenv PORT=3000 && eb setenv POSTGRES_DB=store && eb setenv POSTGRES_HOST=database-2.csjxfdqawy39.us-east-1.rds.amazonaws.com && eb setenv POSTGRES_PASSWORD=password123 && eb setenv POSTGRES_TEST_DB=store_test && eb setenv POSTGRES_USER=full_stack_user && eb setenv SALT_ROUNDS=10 && eb setenv TOKEN_SECRET=dsfds!5434",
+    "setenv": "eb setenv BCRYPT_PASSWORD=store-password ENV=dev PORT=3000 POSTGRES_DB=store POSTGRES_HOST=database-2.csjxfdqawy39.us-east-1.rds.amazonaws.com POSTGRES_PASSWORD=password123 POSTGRES_TEST_DB=store_test POSTGRES_USER=full_stack_user SALT_ROUNDS=10 TOKEN_SECRET=dsfds!5434",
     "deploy": "eb list && eb use fwd-storefront-aws-backend-dev && npm run setenv && eb deploy",
     "build": "npx tsc && cp -R .elasticbeanstalk www/.elasticbeanstalk && cp .npmrc www/.npmrc && cp package.json www/package.json",
     "start": "node ./www/server.js",
