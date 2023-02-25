@@ -4,6 +4,9 @@
   "description": "",
   "main": "server.ts",
   "scripts": {
+    "deploy": "eb list && eb use fwd-storefront-aws-backend && eb deploy",
+    "build": "npm run clean && npx tsc && cp -rf src/config www/config && cp -R .elasticbeanstalk www/.elasticbeanstalk && cp .npmrc www/.npmrc && cp package.json www/package.json",
+    "clean": "rm -rf www/ || true",
     "start": "node ./www/server.js",
     "tsc": "npx tsc",
     "prod": "npx tsc && node ./www/server.js",
@@ -11,7 +14,6 @@
     "watch": "tsc-watch --esModuleInterop src/server.ts --outDir ./dist --onSuccess \"node ./dist/server.js\"",
     "test:windows": "set ENV=test&& db-migrate db:drop test && db-migrate db:create test  && db-migrate --env test reset && npx tsc && db-migrate --env test up && jasmine",
     "test": "ENV=test&& db-migrate db:drop test && db-migrate db:create test  && db-migrate --env test reset && npx tsc && db-migrate --env test up && jasmine",
-    "build": "npx tsc",
     "supertest": "jest"
   },
   "author": "Udacity",

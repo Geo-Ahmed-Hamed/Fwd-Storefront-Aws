@@ -1,16 +1,9 @@
 {
     "scripts": {
-        "frontend:install": "cd fwd-storefront-aws/fwd-storefront-aws-frontend && npm install -f",
-        "frontend:start": "cd fwd-storefront-aws/fwd-storefront-aws-frontend && npm run start",
         "frontend:build": "cd fwd-storefront-aws/fwd-storefront-aws-frontend && npm run build",
-        "frontend:test": "cd fwd-storefront-aws/fwd-storefront-aws-frontend && npm run test",
-        "frontend:e2e": "cd fwd-storefront-aws/fwd-storefront-aws-frontend && npm run e2e",
-        "frontend:lint": "cd fwd-storefront-aws/fwd-storefront-aws-frontend && npm run lint",
         "frontend:deploy": "cd fwd-storefront-aws/fwd-storefront-aws-frontend && npm run deploy",
-        "api:install": "cd fwd-storefront-aws/fwd-storefront-aws-backend && npm install .",
-        "api:build": "cd fwd-storefront-aws/fwd-storefront-aws-backend && npm run build",
-        "api:start": "cd fwd-storefront-aws/fwd-storefront-aws-backend && npm run dev",
-        "api:deploy": "cd fwd-storefront-aws/fwd-storefront-aws-backend && npm run deploy",
+        "backend:build": "cd fwd-storefront-aws/fwd-storefront-aws-backend && npm run build",
+        "backend:deploy": "cd fwd-storefront-aws/fwd-storefront-aws-backend && npm run deploy",
         "deploy": "npm run api:deploy && npm run frontend:deploy"
     }
 }
