@@ -6,6 +6,6 @@
         "backend:install": "cd fwd-storefront-aws/fwd-storefront-aws-backend && npm install -f",
         "backend:build": "cd fwd-storefront-aws/fwd-storefront-aws-backend && npm run build",
         "backend:deploy": "cd fwd-storefront-aws/fwd-storefront-aws-backend && npm run deploy",
-        "deploy": "npm run api:deploy && npm run frontend:deploy"
+        "deploy": "npm run backend:deploy && npm run frontend:deploy"
     }
 }
